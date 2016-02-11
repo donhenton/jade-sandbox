@@ -65,7 +65,7 @@ gulp.task('sass', function () {
 
 gulp.task('run-server', function () {
 
-// livereload.listen();
+  livereload.listen();
 
     nodemon(
             {
@@ -93,7 +93,7 @@ gulp.task('run-server', function () {
             }).on('restart', function ()
     {
         gutil.log('restarted!')
-
+        livereload.reload(pageURL);
     })
 
 });
