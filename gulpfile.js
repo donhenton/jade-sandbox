@@ -35,57 +35,6 @@ gulp.task('sass', function () {
 });
 
 
-
-
-
-/**
- * one way of full end monitoring
- */
-gulp.task('run-monitor', function () {
-
-    livereload.listen();
-
-    nodemon(
-            {
-                script: './bin/www.js',
-                ext: 'js css jade',
-                tasks: function (changedFiles)
-                {
-                    var tasks = [];
-                    changedFiles.forEach(function (file)
-                    {
-                        gutil.log(path.basename(file));
-                        if (path.extname(file) === '.scss' && !~tasks.indexOf('sass'))
-                        {
-                            tasks.push('sass');
-                        }
-
-                        //
-
-                    })
-
-                    return tasks;
-
-                }
-
-            }).on('restart', function ()
-    {
-        gutil.log('restarted!')
-        livereload.reload(pageURL);
-    })
-
-});
-
-
-////////////////////////////////////////////////////////////////////////////
-
-/*
- * 2nd way of full monitoring
- * 
- */
-
-
-
 var watchItems = ['./views/**/*.jade', './routes/**/*.js','./public/**/*.css'];
 var pageURL = 'http://localhost:3000';
 
