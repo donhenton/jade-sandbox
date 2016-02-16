@@ -3,5 +3,8 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='/javascripts/jquery/dist/jquery.js')
+    if jsfile
+      script(src='/javascripts/#{jsfile}')
   body
     block content
