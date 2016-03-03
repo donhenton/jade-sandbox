@@ -4,4 +4,7 @@
  * and open the template in the editor.
  */
 
-
+ 
+$( document ).ready(function() {
+    $("#targetDiv").html("<b>This is from index_code.js</b>")
+});

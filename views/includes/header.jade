@@ -1,0 +1,9 @@
+doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        script(src='/js/jquery/jquery.js')
+        if jsfile
+          script(src='/js/#{jsfile}')
+    body      
