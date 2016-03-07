@@ -7,38 +7,6 @@ and open the template in the editor.
     Created on : Dec 11, 2015, 4:41:32 PM
     Author     : dhenton
 */
-@import url(http://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900);
-@import url(http://fonts.googleapis.com/css?family=Clicker+Script);
-.above {
-  background-color: tan;
-  padding: 0.5%;
-  margin: 0.5%;
-  border: thin solid black; }
-
-.below {
-  background-color: blue;
-  color: white;
-  padding: 0.5%;
-  margin: 0.5%;
-  border: thin solid black;
-  clear: both; }
-
-.container {
-  background-color: #ccc;
-  padding: 2%;
-  margin: 2%; }
-
-.box {
-  background-color: teal;
-  color: white;
-  width: 33.333%;
-  height: 100px;
-  float: left;
-  padding: 1.5%;
-  border: 4px #ccc double;
-  margin: 0%; }
-
-/*------------end block.scss-------------------*/
 /****************
 Reset
 ****************/
@@ -137,72 +105,73 @@ h5 {
   font-size: 12px; }
 
 /* typography ---------------------- */
-/* font-family: 'Elsie Swash Caps', cursive; */
-/* font-family: 'Clicker Script', cursive; */
+.above {
+  background-color: #0088c3;
+  color: white;
+  text-align: center;
+  padding: 0.5%;
+  margin: 0.5%;
+  border: thin solid black; }
+
+.below {
+  background-color: #0088c3;
+  color: white;
+  padding: 0.5%;
+  margin: 0.5%;
+  border: thin solid black;
+  text-align: center;
+  clear: both; }
+
+b {
+  font-family: Verdana;
+  font-weight: bolder; }
+
+i {
+  font-style: italic; }
+
+.container {
+  padding: 0.5%;
+  margin: 0.5%;
+  border: thin solid black;
+  height: 66%; }
+
+section.box-menu {
+  width: 15%;
+  height: 400px;
+  float: left;
+  padding: 1.5%;
+  border: 4px #ccc double;
+  margin: 0%; }
+
+section.box-content {
+  width: 85%;
+  height: 400px;
+  float: left;
+  padding: 1.5%;
+  border: 4px #ccc double;
+  margin: 0%; }
+
+padding: 0.5%;
+margin: 0.5%;
+border: thin solid black;
+/*------------end block.scss-------------------*/
 body {
   padding: 10px;
   font: 14px "Lucida Grande",Helvetica,Arial,sans-serif;
   background-color: white; }
 
+/*
 a {
-  color: #00B7FF; }
+    color: #00B7FF; }
 
 .headerClass {
-  text-align: center;
-  background-color: #0088c3;
-  color: white;
-  font-size: 25px; }
+    text-align: center;
+    background-color: #0088c3;
+    color: white;
+    font-size: 25px; }
 
 .footerClass {
-  margin: 200px  10px;
-  text-align: center;
-  background-color: #0088c3;
-  color: white; }
-
-/* ---------- begin nav ------------------ */
-nav {
-  background-color: #fff;
-  text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  z-index: 1;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-  margin-bottom: 25px;
-  width: 100%; }
-  nav::after {
-    clear: both;
-    content: "";
-    display: table; }
-  nav li {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #766e65;
-    text-transform: uppercase;
-    font-size: 12px;
-    -webkit-transition: 0.15s background-color linear;
-    -moz-transition: 0.15s background-color linear;
-    -o-transition: 0.15s background-color linear;
-    transition: 0.15s background-color linear; }
-    nav li:focus, nav li:hover, nav li.active {
-      background-color: #eb2428;
-      color: #fff; }
-      nav li:focus a, nav li:hover a, nav li.active a {
-        background-color: #eb2428;
-        color: #fff; }
-
-.primary-nav > li {
-  margin: -2px;
-  padding: 55px;
-  display: inline;
-  border-left: 1px solid #ada791; }
-  .primary-nav > li:last-child {
-    border-right: 1px solid #ada791; }
-  .primary-nav > li > a {
-    text-decoration: none; }
-    @media all and (max-width: 500px) {
-      .primary-nav > li > a {
-        font-size: smaller;
-        letter-spacing: -1px; } }
-
-/* ---------- end nav ------------------ */
+    margin: 200px  10px;
+    text-align: center;
+    background-color: #0088c3;
+    color: white; }*/

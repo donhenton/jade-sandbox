@@ -1,8 +1,9 @@
 include includes/header
 div.container.grouping
-    div.inner-container
-        div.headerClass
-            span= title
+    section.box-menu  
+        include includes/menu
+    section.box-content
+        span  from #{title} and is the main content
         block content
 
 

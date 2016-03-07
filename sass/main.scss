@@ -8,13 +8,12 @@ and open the template in the editor.
     Author     : dhenton
 */
 
-@import "components/block";
+
 @import "components/reset";
 @import "components/typography";
 @import "components/clearfix";
-@import url(http://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900); /* font-family: 'Elsie Swash Caps', cursive; */
-@import url(http://fonts.googleapis.com/css?family=Clicker+Script); /* font-family: 'Clicker Script', cursive; */
-
+ 
+@import "components/block";
 
 
 body {
@@ -22,6 +21,9 @@ body {
     font: 14px "Lucida Grande",Helvetica,Arial,sans-serif;
     background-color: white; }
 
+
+
+/*
 a {
     color: #00B7FF; }
 
@@ -35,11 +37,11 @@ a {
     margin: 200px  10px;
     text-align: center;
     background-color: #0088c3;
-    color: white; }
+    color: white; }*/
 
 
 
  
 
 
-@import "components/nav";
+//@import "components/nav";
