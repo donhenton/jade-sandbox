@@ -1,9 +1,15 @@
-var express = require('express');
-var router = express.Router();
 
-/* GET users page. */
-router.get('/', function(req, res, next) {
-  res.render('pages/users', { title: 'Users Page' , 'jsfile':'users_code.js'});
-});
-
-module.exports = router;
+module.exports = function(app)
+{
+    
+    usersRender = function (req,res)
+    {
+        res.render('pages/users', { title: 'Users Page' , 'jsfile':'users_code.js'});
+    }
+    
+    
+    
+     app.get('/users', usersRender);
+    
+    
+}

@@ -1,9 +1,16 @@
-var express = require('express');
-var router = express.Router();
 
-/* GET bonzo page. */
-router.get('/', function(req, res, next) {
-  res.render('pages/bonzo', { title: 'Bonzo Page' , 'jsfile':'bonzo_code.js'});
-});
 
-module.exports = router;
+module.exports = function(app)
+{
+    
+    bonzoRender = function (req,res)
+    {
+        res.render('pages/bonzo', { title: 'Bonzo Page' , 'jsfile':'bonzo_code.js'});
+    }
+    
+    
+    
+     app.get('/bonzo', bonzoRender);
+    
+    
+}
