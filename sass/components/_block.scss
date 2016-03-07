@@ -1,0 +1,42 @@
+@mixin setup  {
+    padding:0.5%;
+    margin: 0.5%;
+    border: thin solid black;
+}
+
+.above
+{
+    background-color: tan;
+    @include setup;
+}
+
+.below
+{
+    background-color: blue;
+    color: white;
+    @include setup;
+    clear:both;
+}
+
+ 
+
+.container
+{
+    background-color: #ccc;
+    padding:2%;
+    margin: 2%;
+}
+
+.box
+{
+    background-color: teal;
+    color: white;
+    width: 33.333%;
+    height: 100px;
+    float: left;
+    padding:1.5%;
+    border: 4px #ccc double;
+    margin: 0%;
+    // @include setup;
+}
+/*------------end block.scss-------------------*/

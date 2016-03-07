@@ -4,32 +4,42 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : Feb 11, 2016, 3:42:00 PM
+    Created on : Dec 11, 2015, 4:41:32 PM
     Author     : dhenton
 */
+
+@import "components/block";
+@import "components/reset";
+@import "components/typography";
+@import "components/clearfix";
+@import url(http://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900); /* font-family: 'Elsie Swash Caps', cursive; */
+@import url(http://fonts.googleapis.com/css?family=Clicker+Script); /* font-family: 'Clicker Script', cursive; */
+
+
+
 body {
-  padding: 10px;
-  font: 14px "Lucida Grande",Helvetica,Arial,sans-serif;
-  background-color: white; }
+    padding: 10px;
+    font: 14px "Lucida Grande",Helvetica,Arial,sans-serif;
+    background-color: white; }
 
 a {
-  color: #00B7FF; }
+    color: #00B7FF; }
 
-.headerClass
-{
-    
+.headerClass {
     text-align: center;
     background-color: #0088c3;
     color: white;
-    font-size: 25px;
-    
-}
+    font-size: 25px; }
 
-.footerClass
-{
-    margin: 200px  10px ;
+.footerClass {
+    margin: 200px  10px;
     text-align: center;
     background-color: #0088c3;
-    color: white;
-    
-}
+    color: white; }
+
+
+
+ 
+
+
+@import "components/nav";
