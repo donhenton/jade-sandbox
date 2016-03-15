@@ -1,11 +1,19 @@
 extends ../layout
 
 block content
-  p This is content comes from json 
-    b
-        i '#{title}'
-  div
-    image(src="images/rr1.jpg" )
+    div.indexLeft
+        p This is content comes from json 
+          b
+              i '#{title}'
 
-  div#targetDiv
+        image(src="images/rr1.jpg" )
+
+        div#targetDiv
+  
+    div.headerDisplay
+        h2   Headers
+        ol
+          each header in header_data
+              li !{header.key} ---> !{header.value}
+ 
  

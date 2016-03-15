@@ -142,11 +142,24 @@ section.box-content {
   border: 4px #ccc double;
   margin: 0%; }
 
-padding: 0.5%;
-margin: 0.5%;
-border: thin solid black;
+ 
 /*------------end block.scss-------------------*/
 body {
   padding: 10px;
   font: 14px "Lucida Grande",Helvetica,Arial,sans-serif;
   background-color: white; }
+
+
+div.headerDisplay
+{
+    width: 550px;
+    float: right;
+    height: 350px;
+    overflow: scroll;
+}
+
+div.indexLeft
+{
+    clear:both;
+    float: left;
+}
